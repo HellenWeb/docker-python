@@ -34,9 +34,9 @@ def fac(n):
         return n * fac(n - 1)
 
 try:
-    num = int(console.input('[bold yellow]Eneter number: [/bold yellow]'))
-    with console.status('[bold green]Learning..[/bold green]') as status:
+    num = int(console.input('[bold yellow]Enter number: [/bold yellow]'))
+    with console.status('[bold green]Learning...[/bold green]') as status:
         sleep(1)
-        console.print(f"\nResult: [bold green]{fac(num)}[/bold green]\n", style="yellow")
+        console.print(f"\nFactorial: [bold green]{fac(num)}[/bold green]\n", style="yellow")
 except EOFError as e:
     print(end="")
